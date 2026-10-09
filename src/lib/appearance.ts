@@ -37,7 +37,7 @@ export type Appearance = z.infer<typeof appearanceSchema>;
 
 /** Defaults mirror theme.css — used when nothing is saved yet. */
 export const defaultAppearance: Appearance = {
-  brand: "#1d4ed8",
+  brand: "#5b2a86",
   accent: "#ffd23f",
   fontPair: "fredoka-nunito",
 };

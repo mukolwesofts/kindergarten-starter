@@ -24,7 +24,15 @@ export const site = {
     { label: "Classes", href: "/#classes" },
     { label: "A day with us", href: "/#a-day-with-us" },
     { label: "Parents", href: "/#parents" },
+    { label: "Gallery", href: "/#gallery" },
     { label: "Contact", href: "/#contact" },
+  ],
+
+  // Replace with the school's real social profiles before launch.
+  socials: [
+    { label: "Instagram", href: "https://instagram.com/stmichaelskindergarten" },
+    { label: "TikTok", href: "https://tiktok.com/@stmichaelskindergarten" },
+    { label: "Facebook", href: "https://facebook.com/stmichaelskindergarten" },
   ],
 
   bookVisitHref: "/#contact",
@@ -34,6 +42,7 @@ export const site = {
       { label: "Classes", href: "/#classes" },
       { label: "A day with us", href: "/#a-day-with-us" },
       { label: "Parents", href: "/#parents" },
+      { label: "Gallery", href: "/#gallery" },
       { label: "Contact", href: "/#contact" },
     ],
   },

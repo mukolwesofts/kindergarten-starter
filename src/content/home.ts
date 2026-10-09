@@ -92,7 +92,7 @@ export const classes = {
       tilted: false,
     },
   ],
-  note: "Daycare is available for younger children. Fees shown are samples — contact the school for the current fee structure.",
+  note: "Daycare is available for younger children. Fees shown are samples - contact the school for the current fee structure.",
 };
 
 export const dayWithUs = {
@@ -169,7 +169,11 @@ export const gallery = {
     { shape: "rounded" as const, label: "Playground fun" },
     { shape: "arch" as const, label: "Art time" },
     { shape: "rounded" as const, label: "Story corner" },
+    { shape: "arch" as const, label: "Snack time" },
+    { shape: "rounded" as const, label: "Music & movement" },
+    { shape: "arch" as const, label: "Outdoor adventures" },
   ],
+  socialsIntro: "Every little moment lives on our socials - come see the full gallery.",
 };
 
 export const closingCta = {

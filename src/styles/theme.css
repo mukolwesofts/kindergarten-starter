@@ -13,25 +13,25 @@
 
 @theme {
     /* ── Colours ─────────────────────────────────────────────── */
-    --color-brand: #1d4ed8;
-    /* friendly blue: headers, footer, links, banner */
-    --color-brand-soft: #3b6be0;
-    /* lighter blue for hover states */
+    --color-brand: #5b2a86;
+    /* deep purple: headers, footer, links, banner */
+    --color-brand-soft: #7c4bb0;
+    /* lighter purple for hover states */
     --color-accent: #ffd23f;
     /* sunshine yellow: CTAs, badges, crest */
-    --color-on-accent: #1a2b4a;
+    --color-on-accent: #2b1b3d;
     /* text/icons placed on top of accent */
-    --color-soft: #eaf1ff;
-    /* light blue section wash */
-    --color-ink: #1a2b4a;
-    /* main text colour (dark navy) */
-    --color-muted: #5a6b87;
+    --color-soft: #f3ecfa;
+    /* lavender section wash */
+    --color-ink: #2b1b3d;
+    /* main text colour */
+    --color-muted: #6f5f83;
     /* secondary text on light surfaces */
     --color-surface: #ffffff;
-    /* page background — mostly white */
-    --color-surface-raised: #fafbff;
+    /* page background */
+    --color-surface-raised: #fdfbff;
     /* cards on light sections */
-    --color-line: #d9e4f8;
+    --color-line: #e4d9f2;
     /* borders, hairlines, dashed placeholders */
     --color-whatsapp: #25d366;
     /* WhatsApp float button (only non-brand colour) */
@@ -51,8 +51,8 @@
     /* rounded-blob → blob frames */
 
     /* ── Shadows ─────────────────────────────────────────────── */
-    --shadow-soft: 0 6px 24px -8px rgb(26 43 74 / 0.14);
-    --shadow-lift: 0 14px 32px -12px rgb(26 43 74 / 0.28);
+    --shadow-soft: 0 6px 24px -8px rgb(43 27 61 / 0.14);
+    --shadow-lift: 0 14px 32px -12px rgb(43 27 61 / 0.28);
 
     /* ── Spacing ─────────────────────────────────────────────── */
     --spacing-section: 5.5rem;
@@ -69,30 +69,30 @@
  * explicit theme is set.
  */
 [data-theme="dark"] {
-    --color-brand: #8db4ff;
-    --color-brand-soft: #abc6ff;
+    --color-brand: #b98fe8;
+    --color-brand-soft: #cbaef0;
     --color-accent: #ffd23f;
-    --color-on-accent: #1a2b4a;
-    --color-soft: #152238;
-    --color-ink: #eaf1ff;
-    --color-muted: #93a5c4;
-    --color-surface: #0c1524;
-    --color-surface-raised: #12203a;
-    --color-line: #23375a;
+    --color-on-accent: #2b1b3d;
+    --color-soft: #241733;
+    --color-ink: #f3ecfa;
+    --color-muted: #b3a4c6;
+    --color-surface: #170f21;
+    --color-surface-raised: #201530;
+    --color-line: #3d2c52;
 }
 
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]):not([data-theme="dark"]) {
-        --color-brand: #8db4ff;
-        --color-brand-soft: #abc6ff;
+        --color-brand: #b98fe8;
+        --color-brand-soft: #cbaef0;
         --color-accent: #ffd23f;
-        --color-on-accent: #1a2b4a;
-        --color-soft: #152238;
-        --color-ink: #eaf1ff;
-        --color-muted: #93a5c4;
-        --color-surface: #0c1524;
-        --color-surface-raised: #12203a;
-        --color-line: #23375a;
+        --color-on-accent: #2b1b3d;
+        --color-soft: #241733;
+        --color-ink: #f3ecfa;
+        --color-muted: #b3a4c6;
+        --color-surface: #170f21;
+        --color-surface-raised: #201530;
+        --color-line: #3d2c52;
     }
 }
 
