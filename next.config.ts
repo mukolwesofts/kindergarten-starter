@@ -16,6 +16,13 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  experimental: {
+    // Allow server actions submitted through the Devin browser-preview
+    // proxy (127.0.0.1:62035), whose Host header differs from origin.
+    serverActions: {
+      allowedOrigins: ["127.0.0.1:62035", "localhost:62035"],
+    },
+  },
   async headers() {
     return [
       {
