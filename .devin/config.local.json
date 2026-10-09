@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Exec(pnpm)"
+      "Exec(pnpm)",
+      "Exec(pkill)"
     ]
   }
 }
