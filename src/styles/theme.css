@@ -1,0 +1,91 @@
+/*
+ * St. Michaels Kindergarten — design tokens.
+ *
+ * This file is the single source of truth for everything visual.
+ * Components only ever use the semantic utilities these tokens create
+ * (bg-brand, text-on-accent, bg-soft, border-line, font-display, ...),
+ * never raw hex values.
+ *
+ * To re-theme the whole site, edit the values below — or, for the
+ * brand/accent/fonts, use Dashboard → Appearance which writes the same
+ * variables onto <html> at runtime.
+ */
+
+@theme {
+  /* ── Colours ─────────────────────────────────────────────── */
+  --color-brand: #5b2a86; /* deep purple: headers, footer, primary buttons */
+  --color-brand-soft: #7c4bb0; /* lighter purple for hover states */
+  --color-accent: #ffd23f; /* sunshine yellow: CTAs, badges, crest */
+  --color-on-accent: #2b1b3d; /* text/icons placed on top of accent */
+  --color-soft: #f3ecfa; /* lavender section wash */
+  --color-ink: #2b1b3d; /* main text colour */
+  --color-muted: #6f5f83; /* secondary text on light surfaces */
+  --color-surface: #ffffff; /* page background */
+  --color-surface-raised: #fdfbff; /* cards on light sections */
+  --color-line: #e4d9f2; /* borders, hairlines, dashed placeholders */
+  --color-whatsapp: #25d366; /* WhatsApp float button (only non-brand colour) */
+
+  /* ── Fonts (wired to next/font in app/layout.tsx) ────────── */
+  --font-display: var(--font-fredoka), ui-rounded, "Comic Sans MS", sans-serif;
+  --font-body: var(--font-nunito), ui-rounded, system-ui, sans-serif;
+
+  /* ── Radii ───────────────────────────────────────────────── */
+  --radius-card: 1.5rem; /* rounded-card → cards, panels */
+  --radius-pill: 999px; /* rounded-pill → buttons, badges */
+  --radius-arch: 999px 999px 1.5rem 1.5rem; /* rounded-arch → arch photo frames */
+  --radius-blob: 58% 42% 45% 55% / 52% 55% 45% 48%; /* rounded-blob → blob frames */
+
+  /* ── Shadows ─────────────────────────────────────────────── */
+  --shadow-soft: 0 6px 24px -8px rgb(43 27 61 / 0.14);
+  --shadow-lift: 0 14px 32px -12px rgb(43 27 61 / 0.28);
+
+  /* ── Spacing ─────────────────────────────────────────────── */
+  --spacing-section: 5.5rem; /* py-section → vertical rhythm between sections */
+  --spacing-section-sm: 3.5rem;
+
+  /* ── Motion ──────────────────────────────────────────────── */
+  --animate-float: float 7s ease-in-out infinite;
+}
+
+/* ── Dark variant ──────────────────────────────────────────────
+ * Same semantic names, different values. Activated by
+ * data-theme="dark" on <html>, or by the OS preference when no
+ * explicit theme is set.
+ */
+[data-theme="dark"] {
+  --color-brand: #b98fe8;
+  --color-brand-soft: #cbaef0;
+  --color-accent: #ffd23f;
+  --color-on-accent: #2b1b3d;
+  --color-soft: #241733;
+  --color-ink: #f3ecfa;
+  --color-muted: #b3a4c6;
+  --color-surface: #170f21;
+  --color-surface-raised: #201530;
+  --color-line: #3d2c52;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) {
+    --color-brand: #b98fe8;
+    --color-brand-soft: #cbaef0;
+    --color-accent: #ffd23f;
+    --color-on-accent: #2b1b3d;
+    --color-soft: #241733;
+    --color-ink: #f3ecfa;
+    --color-muted: #b3a4c6;
+    --color-surface: #170f21;
+    --color-surface-raised: #201530;
+    --color-line: #3d2c52;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(4deg);
+  }
+}
